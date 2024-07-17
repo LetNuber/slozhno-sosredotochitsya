@@ -1,5 +1,56 @@
+:root {
+  --color-pink: #FFC2E6;
+  --shadow__color-pink: #FF0070;
+  --background__text__color-pink: #FF8DCB;
+
+}
+
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  display: grid;
+  width: 1024px;
+  height: 768px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.main {
+  display: grid;
+  background-image: url(/images/cover-image-light.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1024px;
+  height: 768px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.title {
+  font-family: IBM Plex Mono;
+  font-size: 157px;
+  font-weight: 700;
+  line-height: 129.53px;
+  color: var(--color-pink);
+  text-shadow: 4px 4px var(--shadow__color-pink);
+}
+
+.main__text-title {
+  display: flex;
+  justify-content: end;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.main__text-title span {
+  display: flex;
+  width: 491px;
+  height: 70px;
+  background-color: var(--background__text__color-pink);
 }
