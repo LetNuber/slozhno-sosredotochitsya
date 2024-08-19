@@ -14,7 +14,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
-.main {
+.main-page {
   display: grid;
   background-image: url(/images/cover-image-light.png);
   background-size: cover;
@@ -41,6 +41,8 @@
 
 .main__text-title {
   display: flex;
+  width: 491px;
+  height: 71px;
   justify-content: end;
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -48,9 +50,23 @@
   line-height: 23.4px;
 }
 
+.text-title {
+  display: flex;
+  justify-content:flex-end;
+}
+
+.background-color-text_title {
+  background-color: var(--background__text__color-pink);
+}
+
 .main__text-title span {
   display: flex;
   width: 491px;
-  height: 70px;
-  background-color: var(--background__text__color-pink);
+  height: 70px; 
+}
+
+.reasons {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
